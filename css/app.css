@@ -1,0 +1,148 @@
+:root {
+    --accent-color: rgb(84, 84, 255);
+    --accent-color-dark: rgb(64, 64, 255);
+    --accent-color-light: rgb(75, 75, 253);
+}
+
+body {
+    background-color: #222;
+}
+
+#menuBar {
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    height: 24px;
+    border-bottom: 1px solid #444;
+    position: fixed;
+}
+
+.menuButton {
+    border: 1px solid transparent;
+    border-radius: 0px;
+    background-color: transparent;
+    color: white;
+}
+
+.menuButton:hover {
+    border: 1px solid var(--accent-color);
+    background-color: transparent;
+}
+
+.menuButton:active {
+    background-color: var(--accent-color);
+    color: black;
+    border: 1px solid var(--accent-color);
+}
+
+#mainArea {
+    height: calc(100% - 50px);
+    width: 100%;
+    top: 25px;
+    left: 0%;
+    right: 0%;
+    bottom: 0%;
+    position: fixed;
+}
+
+#middlebackground-mainArea {
+    color: #555;
+    font-size: 32px;
+}
+
+#statusBar {
+    height: 24px;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+    background-color: var(--accent-color);
+    color: black;
+    position: fixed;
+    font-size: 15px;
+}
+
+#simpleView {
+    border: none;
+    border-radius: none;
+    height: 100%;
+    background-color: var(--accent-color-dark);
+}
+
+#simpleView:hover {
+    background-color: var(--accent-color-light);
+}
+
+#simpleView:active {
+    background-color: var(--accent-color-light);
+}
+
+#indexWidget {
+    width: 400px;
+    background-color: #222;
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    border: 1px solid var(--accent-color);
+}
+
+#contentWidget {
+    width: calc(100% - 402px);
+    background-color: #222;
+    height: 100%;
+    position: absolute;
+    left: 400px;
+    border: 1px solid var(--accent-color);
+}
+
+div.widget-titlebar {
+    color: #fff;
+    background-color: var(--accent-color-light);
+    padding: 2px;
+    font-size: 15px;
+    display: inherit;
+}
+
+div.widget-content {
+    top: 25px;
+    display: inherit;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+    position: absolute;
+    padding: 5px;
+    overflow-y: scroll;
+    color: #fff;
+}
+
+ul,
+#myUL {
+    list-style-type: none;
+}
+
+#myUL {
+    margin: 0;
+    padding: 0;
+}
+.caret {
+    cursor: pointer;
+    user-select: none;
+}
+
+.caret::before {
+    content: "\25B6";
+    color: white;
+    display: inline-block;
+    margin-right: 6px;
+}
+.caret-down::before {
+    transform: rotate(90deg);
+}
+
+.nested {
+    display: none;
+}
+
+.active {
+    display: block;
+}
