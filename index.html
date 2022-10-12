@@ -5,13 +5,17 @@
     type="module"
     src="https://cdn.jsdelivr.net/gh/zerodevx/zero-md@2/dist/zero-md.min.js"
   ></script>
+  <link rel="stylesheet" href="style.css">
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Docs - ColdflameOS</title>
 </head>
 <body>
+	<div class="navbar"></div>
+	<div class="body">
 	<div class="listofcontents">
 		<div class="category">
+			<div class="categorname">CategoryName</div>
 			<div class="item" onclick="md2()">hello world</div>
 			<div class="item">hello world</div>
 			<div class="item">hello world</div>
@@ -19,6 +23,7 @@
 			<div class="item">hello world</div>
 		</div>
 		<div class="category">
+			<div class="categorname">Name</div>
 			<div class="item">hello world</div>
 			<div class="item">hello world</div>
 			<div class="item">hello world</div>
@@ -26,6 +31,7 @@
 			<div class="item">hello world</div>
 		</div>
 		<div class="category">
+			<div class="categorname">Name</div>
 			<div class="item">hello world</div>
 			<div class="item">hello world</div>
 			<div class="item">hello world</div>
@@ -33,6 +39,7 @@
 			<div class="item">hello world</div>
 		</div>
 		<div class="category">
+			<div class="categorname">Name</div>
 			<div class="item">hello world</div>
 			<div class="item">hello world</div>
 			<div class="item">hello world</div>
@@ -40,6 +47,23 @@
 			<div class="item">hello world</div>
 		</div>
 		<div class="category">
+			<div class="categorname">Name</div>
+			<div class="item">hello world</div>
+			<div class="item">hello world</div>
+			<div class="item">hello world</div>
+			<div class="item">hello world</div>
+			<div class="item">hello world</div>
+		</div>
+		<div class="category">
+			<div class="categorname">Name</div>
+			<div class="item">hello world</div>
+			<div class="item">hello world</div>
+			<div class="item">hello world</div>
+			<div class="item">hello world</div>
+			<div class="item">hello world</div>
+		</div>
+		<div class="category">
+			<div class="categorname">Name</div>
 			<div class="item">hello world</div>
 			<div class="item">hello world</div>
 			<div class="item">hello world</div>
@@ -51,9 +75,13 @@
 
 
 	<div class="infowindow">
-		<zero-md src="md/1.md" id="md"></zero-md>
+		<zero-md src="md/1.md" id="md">
+			<template>
+				<link rel="stylesheet" href="style.css">
+			</template>
+		</zero-md>
 	</div>
-
+</div>
 <script>
 	function md2(){
 		md = document.getElementById("md")
