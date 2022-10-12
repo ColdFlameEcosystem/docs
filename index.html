@@ -1,92 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<script
-    type="module"
-    src="https://cdn.jsdelivr.net/gh/zerodevx/zero-md@2/dist/zero-md.min.js"
-  ></script>
-  <link rel="stylesheet" href="https://coldflameos.github.io/docs/style.css">
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Docs - ColdflameOS</title>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="description" content="Description">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
 </head>
 <body>
-	<div class="navbar"></div>
-	<div class="body">
-	<div class="listofcontents">
-		<div class="category">
-			<div class="categorname">CategoryName</div>
-			<div class="item" onclick="md2()">only this</div>
-			<div class="item">hello world</div>
-			<div class="item">hello world</div>
-			<div class="item">hello world</div>
-			<div class="item">hello world</div>
-		</div>
-		<div class="category">
-			<div class="categorname">Name</div>
-			<div class="item">hello world</div>
-			<div class="item">hello world</div>
-			<div class="item">hello world</div>
-			<div class="item">hello world</div>
-			<div class="item">hello world</div>
-		</div>
-		<div class="category">
-			<div class="categorname">Name</div>
-			<div class="item">hello world</div>
-			<div class="item">hello world</div>
-			<div class="item">hello world</div>
-			<div class="item">hello world</div>
-			<div class="item">hello world</div>
-		</div>
-		<div class="category">
-			<div class="categorname">Name</div>
-			<div class="item">hello world</div>
-			<div class="item">hello world</div>
-			<div class="item">hello world</div>
-			<div class="item">hello world</div>
-			<div class="item">hello world</div>
-		</div>
-		<div class="category">
-			<div class="categorname">Name</div>
-			<div class="item">hello world</div>
-			<div class="item">hello world</div>
-			<div class="item">hello world</div>
-			<div class="item">hello world</div>
-			<div class="item">hello world</div>
-		</div>
-		<div class="category">
-			<div class="categorname">Name</div>
-			<div class="item">hello world</div>
-			<div class="item">hello world</div>
-			<div class="item">hello world</div>
-			<div class="item">hello world</div>
-			<div class="item">hello world</div>
-		</div>
-		<div class="category">
-			<div class="categorname">Name</div>
-			<div class="item">hello world</div>
-			<div class="item">hello world</div>
-			<div class="item">hello world</div>
-			<div class="item">hello world</div>
-			<div class="item">hello world</div>
-		</div>
-	</div>
-
-
-
-	<div class="infowindow">
-		<zero-md src="md/1.md" id="md">
-			<template>
-				<link rel="stylesheet" href="style.css">
-			</template>
-		</zero-md>
-	</div>
-</div>
-<script>
-	function md2(){
-		md = document.getElementById("md")
-		md.src = "md/2.md"
-	}
-</script>
+  <div id="app"></div>
+  <script>
+    window.$docsify = {
+      name: '',
+      repo: ''
+    }
+  </script>
+  <!-- Docsify v4 -->
+  <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
 </body>
 </html>
