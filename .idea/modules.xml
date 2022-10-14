@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/coldflame.doc.io.iml" filepath="$PROJECT_DIR$/.idea/coldflame.doc.io.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../coldflamesos.github.io/.idea/coldflamesos.github.io.iml" filepath="$PROJECT_DIR$/../coldflamesos.github.io/.idea/coldflamesos.github.io.iml" />
+    </modules>
+  </component>
+</project>
